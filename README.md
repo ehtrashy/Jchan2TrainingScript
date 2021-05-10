@@ -8,3 +8,5 @@ based off the orignal script made by jedpossum (hitboxes and the like are all hi
 
 le dumpster foreverrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr!
 #playjchan2
+
+5/9/2021 - added unlimited p1 and p2 super meter
