@@ -88,11 +88,26 @@ P1 Palette 0x2000BD 2&3 are boss palettes
 
 
 function player()
+
+--infinite time
 memory.writebyte(0x200109, 0x09)
-memory.writebyte(0x201116, 0x74)
+--infinite p1 health
+memory.writebyte(0x201116, 0x7F)
 memory.writebyte(0x20117, 0xFF)
+--infinite p2 health
 memory.writebyte(0x2013A2, 0x7F)
 memory.writebyte(0x2013A3, 0xFF)
+--infinite p1 meter
+memory.writebyte(0x201200,0x4000)
+--infinite p2 meter
+memory.writebyte(0x20148C,0x4000)
+--infinite coins
+memory.writebyte(0x200BC0,0x09)
+--infinite super moves p1
+memory.writebyte(0x201200,0x40)
+--infinite super moves p2
+memory.writebyte(0x20148C,0x40)
+
 proadr = 0x2017F0 - 0x7A
 for proj = 0,15,1 do
 proadr = proadr + 0x7A
@@ -163,6 +178,7 @@ for p = 0,1,1 do
 
 if active == 0 then
 drawaxis(px,py,scale(8))
+
 
 
 
